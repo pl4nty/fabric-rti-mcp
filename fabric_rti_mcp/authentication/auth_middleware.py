@@ -180,7 +180,7 @@ def add_auth_middleware(fastmcp: FastMCP) -> None:
         )
 
         # Add middleware to check authentication for MCP endpoints
-        app.add_middleware(AuthMiddleware)
+        app.add_middleware(AuthMiddleware)  # ty: ignore[invalid-argument-type]
 
         return app
 
